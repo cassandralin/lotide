@@ -32,5 +32,6 @@ const middle = function(array) {
 }
 
 
-console.log(middle([1, 2, 3, 6]))
 
+assertArraysEqual([1, 3, 5], [3], false)
+assertArraysEqual([2, 4, 6, 8,], [4, 6], false)

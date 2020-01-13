@@ -8,7 +8,6 @@ const eqObjects = function(objectOne, objectTwo) {
     var propertyName = propertiesOne[i]; //e.g. propertiesOne[0] = 'a';
     var objectOneValue = objectOne[propertyName];
     var objectTwoValue = objectTwo[propertyName];
-
     if (Array.isArray(objectOneValue) && Array.isArray(objectTwoValue)) {
       if(!eqArrays(objectOneValue, objectTwoValue)) {
         return false;
@@ -17,7 +16,6 @@ const eqObjects = function(objectOne, objectTwo) {
         return false;
     }
   }
-
   return true;
 };
 

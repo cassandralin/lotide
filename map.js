@@ -3,7 +3,9 @@ const words = ["ground", "control", "to", "major", "tom"];
 const map = function(array, callback) {
   const results = [];
   for (let item of array) {
-    results.push(callback(item));
+    if (callback){
+      results.push(callback(item));
+    }
   }
   return results;
 }
@@ -34,4 +36,4 @@ const assertArraysEqual = function(arrayOne, arrayTwo) {
 
 assertArraysEqual(["cats", "are", "the", "best"], ["dogs", "are", "also", "awesome"]);
 assertArraysEqual(["lighthouse"], ["labs"]);
-assertArraysEqual(["this", "is", "the", "same", "sentence"], ["this", "is", "the", "same", "sentence"]);
+assertArraysEqual(["this", "is", "the", "same", "sentence"], ["this", "is", "the", "same", "se"]);
