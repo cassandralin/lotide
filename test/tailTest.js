@@ -15,3 +15,4 @@ describe("#tail", () => {
     assert.strictEqual((tail(newWord).length), 0);
   });
 });
+
